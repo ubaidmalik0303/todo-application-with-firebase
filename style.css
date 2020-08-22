@@ -1,0 +1,418 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right , rgb(118, 203, 231) , rgb(179, 74, 179));
+}
+
+.container{
+    margin: 20px auto 0 auto;
+    background-color: white;
+    width: 435px;
+    position: relative;
+    box-shadow: 0px 0px 15px grey;
+    background-color: rgba(150, 216, 84, 0.418);
+}
+
+.top-section{
+    background-image: url('background-159244_960_720.png');
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0 50px 20px;
+    overflow-y: hidden;
+}
+
+#addtodo{
+    border: 0px;
+    background-color: white;
+    border-radius: 500px;
+    box-shadow: 1px 1px 10px grey;
+    font-size: 32px;
+    padding: 4px 10px 4px 10px;
+    width: 25px;
+    text-align: center;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    display: inline-block;
+}
+
+#addtodo button{
+    position: relative;
+    top: -2px;
+    left: -2px;
+    border: 0;
+    background-color: white;
+    font-size: 28px;
+    cursor: pointer;
+    outline: none;
+    color: skyblue;
+}
+
+#deletealltodo{
+    border: 0px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 1px 1px 10px grey;
+    font-size: 20px;
+    padding: 10px 5px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+#inputtodo{
+    width: 220px;
+    height: 42px;
+    border-radius: 20px;
+    display: inline-block;
+    outline: none;
+    border: 0;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#inputtime{
+    position: absolute;
+    top: 150px;
+    left: 135px;
+    outline: none;
+    border: 0;
+}
+
+#labeltime{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: yellow;
+    font-size: 16px;
+}
+
+#record-section{
+    height: 350px;
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 40px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 20px grey;
+    padding-top: 25px;
+    overflow-y: scroll;
+}
+
+#record-section::-webkit-scrollbar{
+    width: 10px;
+    background-color: blueviolet;
+}
+
+#record-section::-webkit-scrollbar-track{
+    border-radius: 20px;
+    width: 10px;
+}
+
+#record-section::-webkit-scrollbar-thumb{
+    background-color: rgb(96, 189, 226);
+    border-radius: 20px;
+}
+
+.record-box:nth-child(even){
+    border-left: 5px solid yellow;
+}
+
+.record-box{
+    box-shadow: 0 0 10px grey;
+    border-left: 5px solid red;
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+    margin-bottom: 20px !important;
+    position: relative;
+}
+
+.record-box h1{
+    margin-left: 10px;
+    display: inline-block;  
+    position: relative;
+    bottom: 15px;
+    font-size: 25px;
+    color: rgb(40, 40, 150);
+}
+
+.record-box i{
+    font-size: 32px;
+    margin-right: 10px;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+#recordtime{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+#tasktime{
+    position: absolute;
+    top: 32px;
+    left: 12px;
+}
+
+#day{
+    color: yellow; 
+    font-size: 62px; 
+    position: absolute; 
+    top: -25px; 
+    left: 45px;
+}
+
+#month{
+    position: absolute; 
+    left: 110px; 
+    top: 5px; 
+    color: white; 
+    font-size: 22px;
+}
+
+#year{
+    position: absolute; 
+    left: 110px; 
+    top: 30px; 
+    color: white; 
+    font-size: 22px;
+}
+
+#weekday{
+    position: absolute; 
+    right: 50px; 
+    top: 15px; 
+    color: white; 
+    font-size: 32px;
+}
+
+#livetime{
+    position: absolute; 
+    right: 60px; 
+    top: 10px; 
+    font-size: 20px; 
+    color: yellow; 
+    font-weight: 800;  
+}
+
+@media screen and (max-width: 560px) {
+
+    .container{
+        margin: 20px auto 0 auto;
+        background-color: white;
+        width: 90%;
+        position: relative;
+        box-shadow: 0px 0px 15px grey;
+        background-color: rgba(150, 216, 84, 0.418);
+    }
+    
+    .top-section{
+        background-image: url('background-159244_960_720.png');
+        background-position: center;
+        background-size: cover;
+        padding: 60px 0 50px 20px;
+        overflow-y: hidden;
+    }
+    
+    #addtodo{
+        border: 0px;
+        background-color: white;
+        border-radius: 500px;
+        box-shadow: 1px 1px 10px grey;
+        font-size: 32px;
+        padding: 4px 10px 4px 10px;
+        width: 25px;
+        text-align: center;
+        position: relative;
+        top: 5px;
+        left: 5px;
+        display: inline-block;
+    }
+    
+    #addtodo button{
+        position: relative;
+        top: -2px;
+        left: -2px;
+        border: 0;
+        background-color: white;
+        font-size: 28px;
+        cursor: pointer;
+        outline: none;
+        color: skyblue;
+    }
+    
+    #deletealltodo{
+        border: 0px;
+        background-color: white;
+        border-radius: 100px;
+        box-shadow: 1px 1px 10px grey;
+        font-size: 12px;
+        padding: 15px 5px;
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        left: 10px;
+        cursor: pointer;
+    }
+    
+    #inputtodo{
+        width: 50%;
+        height: 42px;
+        border-radius: 20px;
+        display: inline-block;
+        outline: none;
+        border: 0;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    #inputtime{
+        position: absolute;
+        top: 150px;
+        left: 130px;
+        outline: none;
+        border: 0;
+    }
+    
+    #labeltime{
+        position: absolute;
+        top: 150px;
+        left: 30px;
+        color: yellow;
+        font-size: 16px;
+    }
+    
+    #record-section{
+        height: 350px;
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 40px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 20px grey;
+        padding-top: 25px;
+        overflow-y: scroll;
+    }
+    
+    #record-section::-webkit-scrollbar{
+        width: 10px;
+        background-color: blueviolet;
+    }
+    
+    #record-section::-webkit-scrollbar-track{
+        border-radius: 20px;
+        width: 10px;
+    }
+    
+    #record-section::-webkit-scrollbar-thumb{
+        background-color: rgb(96, 189, 226);
+        border-radius: 20px;
+    }
+    
+    .record-box:nth-child(even){
+        border-left: 5px solid yellow;
+    }
+    
+    .record-box{
+        box-shadow: 0 0 10px grey;
+        border-left: 5px solid red;
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+        margin-bottom: 20px !important;
+        position: relative;
+    }
+    
+    .record-box h1{
+        margin-left: 10px;
+        display: inline-block;  
+        position: relative;
+        top: 0;
+        font-size: 15px;
+        color: rgb(40, 40, 150);
+    }
+    
+    .record-box i{
+        font-size: 20px;
+        position: relative;
+        margin-right: 10px;
+        right: 10px;
+        top: 25px;
+        cursor: pointer;
+        float: right;
+    }
+
+    .record-box i:nth-child(1){
+        margin-right: 5px !important;
+    }
+    
+    #recordtime{
+        position: absolute;
+        top: 25px;
+        left: 12px;
+        font-size: 10px;
+    }
+    
+    #tasktime{
+        position: absolute;
+        top: 42px;
+        left: 12px;
+        font-size: 10px;
+    }    
+
+    #day{
+        color: yellow; 
+        font-size: 62px; 
+        position: absolute; 
+        top: -25px; 
+        left: 25px;
+    }
+
+    #month{
+        position: absolute; 
+        left: 100px; 
+        top: 5px; 
+        color: white; 
+        font-size: 22px;
+    }
+
+    #year{
+        position: absolute; 
+        left: 100px; 
+        top: 30px; 
+        color: white; 
+        font-size: 22px;
+    }
+
+    #weekday{
+        position: absolute; 
+        right: 20px; 
+        top: 10px; 
+        color: white; 
+        font-size: 32px;
+    }
+
+    #livetime{
+        position: absolute; 
+        right: 30px; 
+        top: 3px; 
+        font-size: 20px; 
+        color: yellow; 
+        font-weight: 800;  
+    }
+
+}

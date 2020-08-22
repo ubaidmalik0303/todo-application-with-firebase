@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- <h1 style="text-align: center; color: white;">ToDo Application</h1> -->
+    
+    <div class="container">
+        <div class="top-section">
+            <div class="date-section">
+                <h1 id="day"></h1>
+                <p id="month"></p>
+                <p id="year"></p>
+                <p id="weekday"></p>
+                <p id="livetime"></p>
+            </div>
+            <div class="add-todo-section">
+                <input type="text" id="inputtodo">
+                <label for="inputtime" id="labeltime">Select Time: </label>
+                <input type="time" id="inputtime">
+                <p id="addtodo"><button onclick="addTodo()">+</button></p>
+                <p id="deletealltodo" style="color: rgb(172, 37, 37);" onclick="deleteAll(this)">Delete All</p>
+            </div>
+        </div>
+        <div id="record-section">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyA7ZyIYFDsDLcYyYWQHMPIFGuKLwYUqius",
+    authDomain: "todoapplication1-33b74.firebaseapp.com",
+    databaseURL: "https://todoapplication1-33b74.firebaseio.com",
+    projectId: "todoapplication1-33b74",
+    storageBucket: "todoapplication1-33b74.appspot.com",
+    messagingSenderId: "509304670577",
+    appId: "1:509304670577:web:4fe7d937cb4496cd5a8ed0"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
